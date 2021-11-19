@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+JS
+Zoom
+Linux
+HTML
+CSS
