@@ -1,0 +1,13 @@
+.posicionamento {
+text-align: center;
+}
+
+li:hover {
+    background-color: rgb(177, 236, 236);
+}
+li:active {
+    color: rgb(14, 84, 214);
+}
+ul, ol {
+    list-style: none;
+}
