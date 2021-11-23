@@ -1,0 +1,39 @@
+div:hover {
+    border: rgb(219, 62, 62) solid;
+}
+div:nth-of-type(1) {
+    background-color: blue;
+}
+div:nth-of-type(2) {
+    background-color: rgb(171, 128, 250);
+}
+div:nth-of-type(3) {
+    background-color: rgb(110, 110, 31);
+    font-size: 1.5em;
+}
+div:nth-of-type(4) {
+    background-color: rgb(122, 53, 6);
+}
+div:nth-of-type(5) {
+    background-color: rgb(182, 182, 182);
+}
+
+/* div.h3:nth-of-type(1) {
+    font-family:monospace;
+}
+div.h3:nth-of-type(2) {
+    font-family:'Franklin Gothic Medium'
+}
+div.h3:nth-of-type(3) {
+    font-family:'Times News Roman'
+}
+
+div.h3:nth-of-type(4) {
+    font-family:'Cambria'
+}
+div.h3:nth-of-type(5) {
+    font-family:
+} */
+h3:nth-of-type(2n+1) {
+    font-style:italic ;
+}
