@@ -1,0 +1,44 @@
+ol {
+    background-color: yellow;
+}
+/* ol li:nth-of-type(2n) {
+    color: green;
+}
+ol li:nth-of-type(2n+1) {
+    text-transform: uppercase;
+} */
+.par {
+    color: green;
+    
+}
+.impar {
+    text-transform: uppercase;
+}
+h1, h2, h3 {
+    color: red;
+}
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+/* em.impar {
+    font-weight: 600px;
+}
+em.par{
+    font-weight: 600px;
+} */
+li.corazul {
+    color: blue;
+}
+li.fundo{
+    background-color: pink;
+}
+a:hover {
+    color: green;
+}
+/* li.negrito:hover {
+    font-weight:600px;
+} */
