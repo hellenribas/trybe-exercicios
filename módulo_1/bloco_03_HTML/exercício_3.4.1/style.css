@@ -40,3 +40,9 @@ table {
 table tr,td {
     border: solid rgb(71, 68, 68);
 }
+nav a:visited {
+    color: white;
+}
+.heard a{
+    color: white;
+}

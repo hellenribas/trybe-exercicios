@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
@@ -8,13 +9,13 @@
   </head>
   <body>
     <header>
-        <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+        <h1>Conheça o Stomatopoda</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#paginicial"></a>Página Inicial</li>
-            <li><a href="#sobre"></a>Sobre</li>
-            <li><a href="#contato"></a>Refêrencias</li>
+            <li><a href="#paginicial">Página Inicial</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Refêrencias</a></li>
         </ul>
       </nav>
     <main>
@@ -23,7 +24,7 @@
             <h2>Fatos sobre o Stomatopoda</h2>
             <section>
                 <h3>O Stomatopoda</h3>
-                <p>Segundo o repositório Institucional da UFPB "Os estomatópodes <em>(Odontodactylus scyllarus)</em> compõe uma ordem de crustáceos marinhos criptobentônicos que habitam águas tropicais e subtropicais.
+                <p id="paginicial">Segundo o repositório Institucional da UFPB "Os estomatópodes <em>(Odontodactylus scyllarus)</em> compõe uma ordem de crustáceos marinhos criptobentônicos que habitam águas tropicais e subtropicais.
                  <br>
                  A principal característica destes animais é o segundo par de maxilípedes aumentados que são utilizados tanto como ferramenta quanto arma."
                 </p>
@@ -56,7 +57,7 @@
             </section>
             <section>
                 <h3>Desenrolar do Trabalho</h3>
-                <p>
+                <p id="sobre">
                     "Foram observados e descritos padrões estruturais característicos das famílias e espécies. Os tamanhos mínimos ou máximos de quatro das espécies estudadas foram ampliados:    <b>Pseudosquillisma oculata; Lysiosquilla scabricauda; Alachosquilla floridensis e Gibbesia neglecta.</b>"
                 </p>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pullosquilla_litoralis_%2810.3897-zookeys.721.20588%29_Figure_1.jpg" alt="stomatopoda" width="300px">
@@ -69,16 +70,16 @@
                 <img src="data:image/jpeg;base64,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" alt="stomatopoda">
             </section>
             <section class="ref">
-                <h3>Refêrencias</h3>
+                <h3 id="contato">Refêrencias</h3>
                 <ul>
                     <li>
-                       <a href="https://pt.wikipedia.org/wiki/Stomatopoda FBPB" target="_blank">Wikipedia</a>  
+                       <a href="https://pt.wikipedia.org/wiki/Stomatopoda FBPB" target="_blank" alt="texto aberto em nova página" >Wikipedia </a>  
                     </li>
                     <li>
-                        <a href=" https://theoatmeal.com/comics/mantis_shrimp" target="_blank">Theoatmeal</a> 
+                        <a href=" https://theoatmeal.com/comics/mantis_shrimp" target="_blank" alt="texto aberto em nova página">Theoatmeal </a> 
                     </li>
                     <li>
-                        <a href=" https://repositorio.ufpb.br/jspui/handle/tede/4113" target="_blank">Repositório UFPB</a> 
+                        <a href=" https://repositorio.ufpb.br/jspui/handle/tede/4113" target="_blank" alt="texto aberto em nova página">Repositório UFPB </a> 
                         
                     </li>
                 </ul>
