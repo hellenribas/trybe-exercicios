@@ -24,12 +24,12 @@ h1 {
 li {
     font-size: 20px;
 }
-/* em.impar {
-    font-weight: 600px;
+ .impar em {
+    font-weight: bold;
 }
-em.par{
-    font-weight: 600px;
-} */
+.par em {
+    font-weight: bold;
+}
 li.corazul {
     color: blue;
 }
@@ -39,6 +39,6 @@ li.fundo{
 a:hover {
     color: green;
 }
-/* li.negrito:hover {
-    font-weight:600px;
-} */
+ li:hover a {
+    font-weight:bold;
+}
