@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(243, 239, 239);
+    margin: 0;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+header {
+    color: rgb(3, 3, 3);
+    padding: 2px;
+    background-color: rgb(180, 184, 182);
+    margin: 0;
+
+}
+nav {
+    background-color: rgb(59, 82, 85);
+    display: inline-block;
+    width: 100%;
+}
+nav li {
+    display: inline-block;
+    margin: 0 10%;
+    font-size: 20px;
+    color: white;
+    
+}
+.ref li {
+    display: inline-block;
+    margin: 0 3% 3% 3%;
+    
+}
+img {
+    width: 300px;
+}
