@@ -33,3 +33,10 @@ nav li {
 img {
     width: 300px;
 }
+table {
+
+    display: inline-block;
+}
+table tr,td {
+    border: solid rgb(71, 68, 68);
+}
