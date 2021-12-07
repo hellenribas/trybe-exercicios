@@ -1,68 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício 5.2</title>
     <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+        section {
+            border-color: black;
+            border-style: solid;
+        }
 
-      .title {
-        text-align: center;
-      }
+        .title {
+            text-align: center;
+        }
 
-      .main-content {
-        background-color: yellow;
-      }
+        .main-content {
+            background-color: yellow;
+        }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+        .main-content .center-content p {
+            font-style: italic;
+        }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
 
-      .main-content .description {
-        text-align: center;
-      }
+        .main-content .description {
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <script>
-      let corpo = document.querySelector('body');
-      let add = document.createElement('h1');
-      add.innerText = 'Exercício 5.2 - JavaScript DOM';
-      corpo.appendChild(add);
+        let corpo = document.querySelector('body');
+        let add = document.createElement('h1');
+        add.innerText = 'Exercício 5.2 - JavaScript DOM';
+        corpo.appendChild(add);
         
+        // 2
+        let principal = document.createElement('main');
+        principal.className = 'main-content';
+        corpo.appendChild(principal);
+
+        //3 
+        let main2 = document.querySelector('main');
+        let secao = document.createElement('section')
+        secao.className = 'center-content';
+        principal.appendChild(secao);
+
+        //4
+        let tagP = document.createElement('p');
+        tagP.innerText = 'Trabalhando com elementos'
+        secao.appendChild(tagP);
+
+        //5
+        let tagSection = document.createElement('section');
+        tagSection.className = 'left-content';
+        principal.appendChild(tagSection);
+
+        //6 
+        let tagSection2 = document.createElement('section');
+        tagSection2.className = 'right-content';
+        principal.appendChild(tagSection2);
+
+        //7
+        let image = document.createElement('img');
+        image.src = 'https://picsum.photos/200'; 
+        image.className = 'small-image';
+        tagSection.appendChild(image);
+
+        //8 
+        
+        function umDoisTres (array) {
+        let ord = document.createElement('ol');
+        tagSection.appendChild(ord);
+        let list = 0;
+        for (index = 0; index < array.length; index += 1) {
+            list = document.createElement('li'); 
+            list.innerText = array[index];
+            ord.appendChild(list);
+        }
+        let colocarNaLista = document.getElementsByTagName('ol');
+        return colocarNaLista;
+         
+        }
+        console.log(umDoisTres(['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']));
+
+        //9
     
+        let tagH31 = document.createElement('h3');
+        let tagH32 = document.createElement('h3');
+        let tagH33 = document.createElement('h3');
+        principal.appendChild(tagH31);
+        principal.appendChild(tagH32);
+        principal.appendChild(tagH33);
+        
+        
+
+
+
+        
+
     </script>
-  </body>
+</body>
+
 </html>
