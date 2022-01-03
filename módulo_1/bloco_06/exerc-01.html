@@ -9,15 +9,20 @@
 <body>
     <h1>Formulário</h1>
     <form action="" method="GET">
-        <h2>USUÁRIO</h2>
-        <input type="email" name="email" id="email-type"  placeholder="Digite seu email" required autocomplete="off" autofocus>
+        <label for="email-type">Usuário: 
+            <input type="email" name="email" id="email-type"  placeholder="Digite seu email" required autocomplete="off" autofocus></label>
         <br>
-        <h2>SENHA</h2>
-        <input type="password" name="senha" id="pass-type" placeholder="Digite sua senha" required>
+       <label for="pass-type">Senha:
+            <input type="password" name="senha" id="pass-type" placeholder="Digite sua senha" required></label>
         <br>
-        <Label for="check">Lembre-se<input type="checkbox" name="check"></Label>
+        <Label for="check-rem">Lembre-se
+            <input type="checkbox" name="check" id="check-rem"></Label>
         <br>
-        <button id="bnt-entrar">ENTRAR</button>
+        <label for="prom-check">Deseja receber emails com promoções e novidades?
+            <input type="checkbox" id="prom-check">
+        </label>
+        <br>
+        <button type="submit" id="bnt-entrar">ENTRAR</button>
     </form>
 </body>
 </html>
