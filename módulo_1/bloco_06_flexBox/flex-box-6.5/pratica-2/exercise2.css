@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+background-image: url(old-book.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: aliceblue;
+font-size: 24px;
+}
+
+.list {
+    display: none;
+}
+
+.container header, .aside-one, .aside-two, .main-content  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-content h1 {
+    align-self: center;
+    font-size: 20px;
+}
+.main-content p {
+    margin: 10px 20px;
+}
+.aside-one ul {
+    color: rgb(172, 147, 9);
+    font-size: 20px;
+    font-weight: 700;
+}
+.aside-one h2 {
+    color: rgb(185, 197, 16);
+    font-size: 24px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 3px;
+}
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 40px;
+    }
+    .aside-one {
+        color: rgb(185, 197, 16);
+        font-size: 40px;
+    }
+}
