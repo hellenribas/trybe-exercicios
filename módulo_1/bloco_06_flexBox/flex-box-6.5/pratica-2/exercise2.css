@@ -43,6 +43,9 @@ font-size: 24px;
     color: rgb(185, 197, 16);
     font-size: 24px;
 }
+.aside-two ul li {
+    color: rgb(146, 144, 0);
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -53,10 +56,32 @@ footer {
 }
 @media screen and (min-width: 600px) {
     body {
+        font-size: 30px;
+    }
+    .aside-one {
+        color: rgb(97, 104, 4);
         font-size: 40px;
+    }
+    .aside-two h2 {
+        color: rgb(98, 97, 11);
+    }
+    header {
+        font-size: 50px;;
+    }
+}
+@media screen and (min-width: 1800px) {
+    body {
+        font-size: 30px;
     }
     .aside-one {
         color: rgb(185, 197, 16);
         font-size: 40px;
     }
+    .aside-one li, h2 {
+        font-size: 30px;
+    }
 }
+    .aside-two h2 {
+        color: rgb(190, 187, 11);
+    }
+
