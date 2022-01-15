@@ -18,19 +18,18 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3})
-console.log(allLessons);
-
-const modify = (obj, key, value) => obj[key] = value;
-console.log(modify(lesson2, 'turno', 'noite'), lesson2);
-
-const listKey = obj => Object.keys(obj);
-console.log(listKey(lesson1));
-
-const sizeObjc = obj => Object.keys(obj).length;
-console.log(sizeObjc(lesson3));
-
-const valueObj = obj => Object.values(obj);
-console.log(valueObj(lesson1));
+const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 
 
+
+const numStudent = () => {
+  let total = 0;
+  for (i = 0; i < Object.values(allLessons).length; i += 1) {
+    let object =  Object.values(allLessons);
+    let numStudent = object[i]['numeroEstudantes'];
+      total += numStudent;
+  }
+  return total
+
+}
+console.log(numStudent());
