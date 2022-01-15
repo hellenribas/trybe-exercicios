@@ -22,14 +22,27 @@ const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
 
 
 
-const numStudent = () => {
+const numStudent = (obj, value) => {
   let total = 0;
-  for (i = 0; i < Object.values(allLessons).length; i += 1) {
-    let object =  Object.values(allLessons);
-    let numStudent = object[i]['numeroEstudantes'];
-      total += numStudent;
+  for (i = 0; i < Object.values(obj).length; i += 1) {
+    let object =  Object.values(obj);
+    let valueRequired = object[i][value];
+      total += valueRequired;
   }
   return total
 
 }
-console.log(numStudent());
+// console.log(numStudent(allLessons, 'numeroEstudantes'));
+
+  const keyPosition = (obj, position) => Object.values(obj)[position];
+
+  console.log(keyPosition(lesson1, 0));
+
+  const verifyExist = (obj, key, value) => {
+    let object;
+    for (i = 0; i < Object.entries(obj).length; i += 1) {
+      object = Object.entries(obj)[i].includes(key, value);
+    }
+    return object;    
+}
+  console.log(verifyExist(lesson3, 'verificação', 'noite'));
