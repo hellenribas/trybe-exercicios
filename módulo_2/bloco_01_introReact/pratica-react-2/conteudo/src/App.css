@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(220, 231, 224);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: rgb(71, 102, 8);
+  width: 100%;
+  margin-bottom: 2%;
+  color: aliceblue;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-size: 140%;
+  color: rgb(2, 88, 62);
+}
+
+.footer {
+  color: rgb(4, 58, 31);
+  font-size: 90%;
+}
+
+li:hover {
+  color: rgb(6, 97, 44);
+  font-weight: 600;
+}
